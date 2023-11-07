@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button{
+            padding: 5px;
+            display: block;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+    function formatDate() {
+        const dateElement = document.getElementById("formatted-date");
+        const currentDate = new Date();
+
+        const day = currentDate.getDate();
+        const month = currentDate.toLocaleString('default', { month: 'long' });
+        const year = currentDate.getFullYear();
+
+        const formattedDate = `${day}/${month}/${year}`;
+        dateElement.textContent = `${formattedDate}`;
+    }
+    function defaultDate() {
+        const dateTimeElement = document.getElementById("formatted-date1");
+        const currentDate = new Date();
+        dateTimeElement.textContent = `${currentDate}`;
+    }
+  </script>
+</head>
+
+<body>
+<button onclick="formatDate()">show date</button>
+<p id="formatted-date"></p>
+<button onclick="defaultDate()">show time</button>
+<p id="formatted-date1"></p>
+
+</body>
+</html>

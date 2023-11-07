@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Sorting Letters Alphabetically</h1>
+
+<label for="wordInput">Enter a string:</label>
+<input type="text" id="wordInput">
+<button onclick="sortAndDisplay()">Sort Letters</button>
+<p id="sortedWord"></p>
+
+<script>
+function sortAndDisplay() {
+  const wordInput = document.getElementById("wordInput");
+  const sortedWordDisplay = document.getElementById("sortedWord");
+
+  const inputWord = wordInput.value;
+  const sortedWord = sortLettersAlphabetically(inputWord);
+  sortedWordDisplay.textContent = `Sorted word: ${sortedWord}`;
+}
+
+function sortLettersAlphabetically(word) {
+  const letters = word.split('');
+  const sortedLetters = letters.sort();
+  const sortedWord = sortedLetters.join('');
+  return sortedWord;
+}
+</script>
+</body>
+</html>

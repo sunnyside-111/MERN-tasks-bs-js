@@ -1,0 +1,105 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.heading{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 200%;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group-text {
+  background-color: transparent;
+  border: none;
+}
+
+.login-form input {
+  border: 1px solid #ced4da;
+  border-radius: 0 5px 5px 0;
+  width: 100%;
+  padding: 10px;
+}
+.login-form .input-group .input-group-text {
+  background-color: #f2f2f2; 
+  border: 1px solid #ced4da; 
+  padding: 8px; 
+  border-radius: 5px 0 0 5px; 
+}
+
+.login-form .input-group .input-group-text .fa {
+  color: #333;
+}
+.login-form .button-container {
+  margin-top: 20px;
+}
+
+.login-button {
+  background-color: #0082d2; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  width: 280px;
+}
+.login-button:hover {
+  background-color: #005a98; 
+}
+
+.login-form .form-ending{
+  padding-top: 20px;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+
+a{
+  text-decoration: none;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.form-ending input[type="checkbox"] {
+  margin-right: 10px;
+}
+.form-ending label {
+  font-size: 14px;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #0077c0;
+  text-decoration: none;
+}
+
+.body-ending{
+  position: absolute;
+  margin-top: 30%;
+}
